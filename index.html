@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>html 你好</title>
+</head>
+
+<body>
+    <!-- <video src="5.mp4" width="1000px" controls preload="auto" poster="5.mp4">
+        <source src="5.mp4" type="video/mp4">
+    </video> -->
+    <a href="#test">test</a>
+    <br> abcdefg
+    <p>你好</p>
+    你好
+    <!-- 换行 --><br />
+    <h1 align="center">nihao</h1>
+    你好
+    <a href="https://www.baidu.com" target="_blank">百度</a>
+    <b>加粗</b>
+    <em>斜体</em>
+    <u>下划线</u>
+    <s>删除线</s>
+    <del>删除线</del>
+    <table align="center" border="1" cellpadding="2" cellspacing="0">
+        <thead>
+            <tr>
+                <th>用户</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <!--<th>加粗并居中</th>-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>abcdsada</td>
+                <td>男</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>lqy</td>
+                <td>女</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>jsd</td>
+                <td>男</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>jsd</td>
+                <td>男</td>
+                <td>18</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table border="1">
+        <tr>
+            <th>aaaa</th>
+            <th>aaaa</th>
+            <th>aaaa</th>
+            <th>aaaa</th>
+        </tr>
+        <tr>
+            <td>aaaa</td>
+            <td>aaaa</td>
+            <td>aaaa</td>
+            <td>aaaa</td>
+        </tr>
+        <tr>
+            <td>aaaa</td>
+            <td colspan="2" align="center">aaaa</td>
+            <td>aaaa</td>
+        </tr>
+        <tr>
+            <td>aaaa</td>
+            <td>aaaa</td>
+            <td>aaaa</td>
+            <td>aaaa</td>
+        </tr>
+    </table>
+    <ol reversed type="1">
+        <!--type有五种选择1、A、a、I、i-->
+        <li>处理图像</li>
+        <ol type="a">
+            <li>在页面上插入图片</li>
+            <li>从图片和文件打印样式中提取文字</li>
+            <li>在笔记本页上插入屏幕剪辑</li>
+            <li>裁剪图片</li>
+            <li>在页面上组合图片</li>
+        </ol>
+    </ol>
+    <!-- <ol>有序列表</ol>
+                <ul>无序列表</ul> -->
+    <ul>
+        <li>处理图像</li>
+        <ul>
+            <li>在页面上插入图片</li>
+            <li>从图片和文件打印样式中提取文字</li>
+            <li>在笔记本页上插入屏幕剪辑</li>
+            <li>裁剪图片</li>
+            <li>在页面上组合图片</li>
+        </ul>
+    </ul>
+
+
+    <!-- 表单：输入框 -->
+    <form>
+        <!-- <input> 单行文本框
+                    <textarea> 多行文本框 </textarea> -->
+        <input type="text" value="输入框初始值">
+        <br />
+        <input type="text" placeholder="输入框初始值虚化" maxlength="1">
+        <br />
+        <!-- value 输入框初始值
+                    placeholder 输入框初始值虚化
+                    maxlength 输入字符最大数量
+                    size 文本框长度
+                    readonly 只读文本框
+                    -->
+        <input type="text" placeholder="输入框初始值虚化" size="10">
+        <br>
+        <input type="text" placeholder="输入框初始值虚化" readonly>
+        <br>
+        <input type="password">
+        <input type="button" value="按钮">
+        <button>按钮</button>
+        <!-- js合作并且作为绑定事件的 -->
+        <input type="submit" value="提交">
+        <textarea name="lqy" id="" cols="50" rows="10"></textarea>
+        <input type="range" min="-100" max="100" step="20">
+        <input type="range" min="-100" max="100" step="20" value="-100">
+        <input type="number" min="-100" max="100" value="1">
+        <input type="checkbox">
+        <!-- 选择框 多选 -->
+        <input type="radio">
+        <!-- 选择框 单选 (需要有相同name)-->
+        <br> 我是谁？
+        <br>
+        <input type="radio" name="a" checked>l
+        <!-- checked 初始选中一个 -->
+        <input type="radio" name="a">q
+        <input type="radio" name="a">y
+        <br> How old are you?
+        <select>
+            <option>11</option>
+            <option>13</option>
+            <option>15</option>
+            <option>18</option>
+        </select>
+        <input type="text" list="datalist1">
+        <datalist id="datalist1">
+            <option>11</option>
+            <option>13</option>
+            <option>15</option>
+            <option>18</option>
+        </datalist>
+        <br>
+        <br>
+        <input type="email">
+        <input type="tel">
+        <input type="url">
+        <input type="date">
+        <!-- 输入时间 -->
+        <input type="color">
+        <input type="search">
+        <input type="hidden" value="lqy">
+        <!-- 提交表单时依旧会上传 -->
+        <input type="image" src="1.jpg" width="100px" height="50px">
+        <!-- 图片按钮 -->
+        <!-- <input type="file" multiple> 
+                <input type="file" required> -->
+        <!-- 
+                multiple 多个文件 
+                required 单个文件 
+                -->
+        <img src="2.jpg" width="100px" height="50px" alt="下载按钮">
+        <!-- alt 当图片不存在时显示的内容 -->
+        <!-- <a href="1.jpg">
+                    <img src="1.jpg" alt="错误"  width="100px" height="50px" usemap="#map1">
+                </a> -->
+        <!-- <form>
+                    <input type="image" src="1.jpg" width="100px" height="50px">
+                </form> -->
+        <img src="1.jpg" alt="错误" width="100px" height="50px" usemap="#map1">
+        <map name="map1">
+            <area shape="rect" coords="10,10,50,40" href="3.png" alt="备用" target="_blank">
+            <area shape="rect" coords="50,10,90,40" href="4.txt" alt="备用" target="_blank">
+        </map>
+        <br/><br/><br/><br/>
+        <p id="test">test</p>
+        <a href="#">返回顶部</a>
+
+    </form>
+</body>
+
+</html>
